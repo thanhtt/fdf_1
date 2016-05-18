@@ -20,4 +20,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    app_name: "Food and Drink"
+    login: "Login"
+    home: "Home"
+    account: "Acount"
+    profile: "Profile"
+    settings: "Settings"
+    logout: "Logout"
