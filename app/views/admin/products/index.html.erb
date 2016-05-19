@@ -1,0 +1,16 @@
+<% provide title: t("products.all") %>
+<%= link_to t("products.new"), new_admin_product_path,
+  {class: "btn btn-primary"} %>
+<% if @products.any? %>
+  <table class="table table-hover">
+    <tr>
+      <th><%= t "products.name" %></th>
+      <th><%= t "products.image" %></th>
+      <th></th>
+    </tr>
+    <%= render @products %>
+  </table>
+  <div class="text-center">
+    <%= will_paginate %>
+  </div>
+<% end %>
