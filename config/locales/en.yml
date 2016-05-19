@@ -24,4 +24,4 @@ en:
     unhappy: "Unhappy"
     back: "Back"
     are_you_sure: "Are you sure"
-    sign_in_with: "Sign in with #{provider}"
+    sign_in_with: "Sign in with %{provider}"
