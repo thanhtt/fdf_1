@@ -1,0 +1,22 @@
+<% provide :title, t("products.show") %>
+<div class="list-group-item">
+  <div class="row">
+    <div class="col-md-3">
+      <%= image_tag @product.image.thumb.url, class: "img-rounded" %>
+    </div>
+    <div class="col-md-3">
+    <span class="badge product_show"> <%= t "products.price" %>:
+      <%= @product.price %>
+    </span><br>
+    <span class="label label-success product_show">
+    <%= t "products.name" %>:<%= @product.name %>
+  </span><br>
+      <p><%= @product.description %></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-3">
+      <%= link_to t("products.all"), admin_products_path %>
+    </div>
+  </div>
+</div>
