@@ -14,5 +14,7 @@ Devise.setup do |config|
 
   #Add your ID and secret here
   #ID first, secret second
-  config.omniauth :facebook, "117824455299548", "05c64e8ce7f68865b94ecafa9e6ef59e", scope: "email"
+  config.omniauth :facebook, ENV["FACEBOOK_KEY"], ENV["FACEBOOK_SECRET"],
+    scope: "email"
+  config.omniauth :google_oauth2, ENV["GOOGLE_KEY"], ENV["GOOGLE_SECRET"], scope: "email"
 end
