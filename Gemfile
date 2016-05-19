@@ -2,6 +2,11 @@ source "https://rubygems.org"
 
 gem "rails", "4.2.6"
 gem "bcrypt", "3.1.7"
+gem "devise"
+gem "omniauth"
+gem "omniauth-facebook"
+gem "omniauth-google-oauth2"
+gem "google-api-client"
 gem "bootstrap-sass", "3.2.0.0"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
@@ -13,8 +18,7 @@ gem "sdoc", "~> 0.4.0", group: :doc
 gem "will_paginate", "3.0.7"
 gem "bootstrap-will_paginate", "0.0.10"
 gem "config"
-gem 'jquery-rails'
-gem 'friendly_id'
+gem "friendly_id"
 
 group :development do
   gem "web-console", "~> 2.0"
