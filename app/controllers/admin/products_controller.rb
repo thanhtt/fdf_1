@@ -1,5 +1,6 @@
 class Admin::ProductsController < ApplicationController
   before_action :load_product, except: [:new, :create, :index]
+  load_and_authorize_resource
 
   def index
     @products = Product.paginate page: params[:page]
