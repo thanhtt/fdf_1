@@ -9,6 +9,7 @@ en:
     logout: "Logout"
     framgia_orders: "Framgia Orders"
     edit: "Edit"
+    back: "Back"
   sessions:
     signup: "Sign up"
     signin: "Sign in"

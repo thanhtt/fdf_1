@@ -21,6 +21,7 @@ gem "config"
 gem "friendly_id"
 gem "carrierwave"
 gem "mini_magick"
+gem "config"
 
 group :development do
   gem "web-console", "~> 2.0"
