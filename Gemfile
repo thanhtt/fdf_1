@@ -23,6 +23,8 @@ gem "carrierwave"
 gem "mini_magick"
 gem "config"
 gem "cancancan", "~> 1.10"
+gem "bootstrap-social-rails"
+gem "font-awesome-rails"
 
 group :development do
   gem "web-console", "~> 2.0"

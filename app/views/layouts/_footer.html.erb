@@ -1,2 +1,35 @@
-<footer class="container-fluid text-center">
+<footer class="text-center">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-4">
+          <h3><%= t "footer.location" %></h3>
+          <p><%= t "footer.f18_edu_framgia" %><br>
+            <%= t "footer.address" %>
+          </p>
+        </div>
+        <div class="footer-col col-md-4">
+          <h3><%= t "footer.suggestion" %></h3>
+          <li>
+              <%= link_to t("suggestions.click"), new_suggestion_path, class: "btn btn-primary" %>
+          </li>
+        </div>
+        <div class="footer-col col-md-4">
+          <h3><%= t "footer.about_us" %></h3>
+          <p><%= t "footer.contact_us" %><a href="http://recruit.framgia.com">
+            <%= t "footer.framgia" %></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <%= t "footer.copyright" %>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

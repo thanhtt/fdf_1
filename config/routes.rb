@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "static_pages#home"
 
   resources :products, only: [:show]
+  resources :suggestions
 
   namespace :admin do
     root "products#index"
