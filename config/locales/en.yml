@@ -53,3 +53,19 @@ en:
     select_a_category: "Select a category"
   error:
     error: "error"
+  suggestions:
+    suggestion: "Suggestion"
+    new_suggestion: "New Suggestion"
+    send: "Send"
+    suggestion_created: "Suggestion Created"
+    suggestion_error: "Suggestion Error"
+  footer:
+    location: "Location"
+    f18_edu_framgia: "F18 Edu-Framgia"
+    address: "Keangnam Larkmark, Me Tri"
+    suggestion: "Suggestion"
+    about_us: "About Us"
+    contact_us: "Contact Us"
+    copyright: "Copyright © Your Website 2016"
+    framgia: "Framgia Vietnam"
+    click: "Click"
