@@ -3,7 +3,9 @@
     <%= product.name %>
   </td>
   <td class="course-description">
-    <%= image_tag product.image.thumb.url, class: "img-circle image_small" %>
+    <%= image_tag product.image.thumb.url,
+      class: "img-#{(product_counter + 1).even? ? "rounded": "circle"}
+      image_small" %>
   </td>
   <td class="col-actions text-right btn-group">
     <%= link_to [:admin, product], class: "btn btn-info btn-xs" do %>
