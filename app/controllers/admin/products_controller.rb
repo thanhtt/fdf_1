@@ -2,8 +2,11 @@ class Admin::ProductsController < ApplicationController
   before_action :load_product, except: [:new, :create, :index]
   load_and_authorize_resource
 
+  layout "admin"
+
   def index
-    @products = Product.paginate page: params[:page]
+    @products = Product.paginate page: params[:page],
+      per_page: Settings.per_page
   end
 
   def show
