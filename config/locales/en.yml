@@ -91,4 +91,16 @@ en:
     manager: "Admin Manager"
     user: "User"
     product: "Product"
-
+  categories:
+    deleted: "Category Deleted"
+    not_delete: "Category not delete"
+    edit: "edit"
+    delete: "deleted"
+    ok_delete: "delete this category?"
+    all: "All categories"
+    new: "new category"
+    created: "Category created"
+    error: "error"
+    updated: "Category updated"
+    deleted: "Deleted"
+    not_delete: "not delete"

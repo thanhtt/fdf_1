@@ -1,5 +1,4 @@
 class Admin::UsersController < ApplicationController
-  before_action :load_user, only: [:show, :destroy]
   load_and_authorize_resource
 
   layout "admin"
@@ -19,10 +18,5 @@ class Admin::UsersController < ApplicationController
       flash[:danger] = t "users.not_delete"
     end
     redirect_to admin_users_path
-  end
-
-  private
-  def load_user
-    @user = User.find params[:id]
   end
 end
