@@ -1,0 +1,14 @@
+<tr class=" <%= (suggestion_counter + 1).even? ? "success": "danger" %>">
+  <td class="suggestion-description">
+    <%= suggestion.content %>
+  </td>
+  <td>
+    <%= link_to suggestion.user.email, [:admin, suggestion.user] %>
+  </td>
+  <td class="col-actions text-right btn-group">
+    <%= link_to [:admin, suggestion], class: "btn btn-info btn-xs" do %>
+      <span class="glyphicon glyphicon-eye-open"></span>
+        <%= t "suggestions.detail" %>
+    <% end %>
+  </td>
+</tr>

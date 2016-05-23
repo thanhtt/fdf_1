@@ -328,3 +328,12 @@ footer {
     margin-right: 0;
   }
 }
+
+table#suggestion {
+  table-layout:fixed;
+  td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+}

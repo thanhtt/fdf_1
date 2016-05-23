@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     root "products#index"
     resources :products
     resources :users, only: [:index, :show, :destroy]
+    resources :suggestions, only: [:index, :show, :destroy]
   end
 end

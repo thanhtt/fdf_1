@@ -4,10 +4,13 @@
       <a href="#"><%= t "admin.manager" %></a>
     </li>
     <li>
+      <%= link_to t("admin.product"), admin_products_path %>
+    </li>
+    <li>
       <%= link_to t("admin.user"), admin_users_path %>
     </li>
     <li>
-      <%= link_to t("admin.product"), admin_products_path %>
+      <%= link_to t("admin.suggestion"), admin_suggestions_path %>
     </li>
   </ul>
 </div>

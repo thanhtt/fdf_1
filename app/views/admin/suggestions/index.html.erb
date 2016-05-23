@@ -1,0 +1,16 @@
+<% provide title: t("suggestions.all") %>
+<% if @suggestions.any? %>
+  <table id="suggestion" class="table table-hover">
+    <tr>
+      <th><%= t "suggestions.content" %></th>
+      <th><%= t "users.user" %></th>
+      <th></th>
+    </tr>
+    <%= render @suggestions %>
+  </table>
+  <div class="text-center">
+    <%= will_paginate %>
+  </div>
+<% else %>
+  <h2> <%= t "suggestions.not_found" %> </h2>
+<% end %>
