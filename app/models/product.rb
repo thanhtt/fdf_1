@@ -13,7 +13,7 @@ class Product < ActiveRecord::Base
 
   private
   def image_size_validation
-    errors[:image] << In18.t("max_size_image") if image.size >
-      0.5.megabytes
+    errors[:image] << I18n.t("max_size_image") if image.size >
+      10.megabytes
   end
 end

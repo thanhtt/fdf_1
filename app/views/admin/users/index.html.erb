@@ -1,0 +1,13 @@
+<% provide title: t("users.all") %>
+<% if @users.any? %>
+  <table class="table table-hover">
+    <tr>
+      <th><%= t "users.email" %></th>
+      <th></th>
+    </tr>
+    <%= render @users %>
+  </table>
+  <div class="text-center">
+    <%= will_paginate %>
+  </div>
+<% end %>

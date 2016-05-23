@@ -69,3 +69,17 @@ en:
     copyright: "Copyright © Your Website 2016"
     framgia: "Framgia Vietnam"
     click: "Click"
+  users:
+    deleted: "User deleted"
+    not_delete: "User not delete"
+    all: "All users"
+    name: "Name"
+    email: "Email"
+    detail: "Detail"
+    ok_delete: "Delete this user?"
+    deleted: "Delete"
+  admin:
+    manager: "Admin Manager"
+    user: "User"
+    product: "Product"
+
