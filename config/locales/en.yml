@@ -59,6 +59,14 @@ en:
     send: "Send"
     suggestion_created: "Suggestion Created"
     suggestion_error: "Suggestion Error"
+    all: "All Suggestions"
+    content: "Content"
+    detail: "Detail"
+    ok_delete: "Delete this suggestion?"
+    delete: "Delete"
+    deleted: "Suggestion deleted"
+    not_delete: "Suggestion not delete"
+    not_found: "Suggestion not found"
   footer:
     location: "Location"
     f18_edu_framgia: "F18 Edu-Framgia"
@@ -78,6 +86,7 @@ en:
     detail: "Detail"
     ok_delete: "Delete this user?"
     deleted: "Delete"
+    user: "User"
   admin:
     manager: "Admin Manager"
     user: "User"
