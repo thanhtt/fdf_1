@@ -1,5 +1,4 @@
 class Admin::ProductsController < ApplicationController
-  before_action :load_product, except: [:new, :create, :index]
   load_and_authorize_resource
 
   layout "admin"
@@ -52,9 +51,5 @@ class Admin::ProductsController < ApplicationController
   def product_params
     params.require(:product).permit :name, :description, :price,
       :category_id, :image, :remove_image
-  end
-
-  def load_product
-    @product = Product.find params[:id]
   end
 end
