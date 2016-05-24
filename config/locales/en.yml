@@ -113,3 +113,7 @@ en:
     comment: "Comment"
     created: "comment created"
     error: "comment error"
+  searchs:
+    remove: "remove"
+    add_conditions: "add conditions"
+    search: "search"

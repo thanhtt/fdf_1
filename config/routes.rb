@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :line_items, only: [:create, :update, :destroy]
   resources :products, only: [:show, :index] do
     resources :comments
+    collection{post :search, to: "products#index"}
   end
   resources :suggestions
 
