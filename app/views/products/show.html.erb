@@ -15,8 +15,11 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4 col-md-offset-3">
+    <div class="col-md-1 col-md-offset-2">
       <%= link_to t("static_pages.home"), root_path %>
+    </div>
+    <div class="col-md-1">
+      <%= social_share_button_tag(@product.name) %>
     </div>
   </div>
 </div>

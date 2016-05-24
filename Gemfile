@@ -26,6 +26,7 @@ gem "cancancan", "~> 1.10"
 gem "bootstrap-social-rails"
 gem "font-awesome-rails"
 gem "ransack"
+gem "social-share-button"
 
 group :development do
   gem "web-console", "~> 2.0"
