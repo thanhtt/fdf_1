@@ -1,4 +1,17 @@
-<h3 class="text-center"><%= t "order.products_for_sale" %></h3>
+<h3 class="text-center">
+  <%= t "order.products_for_sale" %></h3>
 <% @products.each do |product| %>
   <%= render "product_row", product: product, line_item: @line_item %>
 <% end %>
+<div class="row">
+  <%= search_form_for @search, url: search_products_path,
+    method: :post do |f| %>
+    <%= f.condition_fields do |c| %>
+      <%= render "condition_fields", f: c %>
+    <% end %>
+    <%= link_to_add_fields t("searchs.add_conditions"), f, :condition %>
+    <div class="actions col-md-3 col-md-offset-3">
+      <%= f.submit t("searchs.search"), class: "btn-success" %>
+    </div>
+  <% end %>
+</div>

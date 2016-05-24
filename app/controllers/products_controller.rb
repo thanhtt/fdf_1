@@ -4,6 +4,9 @@ class ProductsController < ApplicationController
       per_page: Settings.per_page
     @products = Product.all
     @line_item = current_order.line_items.new
+    @search = Product.search params[:q]
+    @products = @search.result
+    @search.build_condition if @search.conditions.empty?
   end
 
   def show
