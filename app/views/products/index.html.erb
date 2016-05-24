@@ -1,0 +1,4 @@
+<h3 class="text-center"><%= t "order.products_for_sale" %></h3>
+<% @products.each do |product| %>
+  <%= render "product_row", product: product, line_item: @line_item %>
+<% end %>

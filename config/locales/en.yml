@@ -104,3 +104,7 @@ en:
     updated: "Category updated"
     deleted: "Deleted"
     not_delete: "not delete"
+  order:
+    products_for_sale: "Products for Sale"
+    add_to_cart: "Add to Cart"
+    unit_price: "Unit Price"
