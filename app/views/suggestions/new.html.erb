@@ -7,7 +7,7 @@
       <%= render "shared/error_messages", object: @suggestion %>
 
       <%= f.label :content %>
-      <%= f.text_area :content, class: 'form-control' %>
+      <%= f.text_area :content, class: "form-control", required: "true" %>
 
       <%= f.submit t("suggestions.send"), class: "btn btn-primary" %>
     <% end %>

@@ -95,7 +95,7 @@ en:
     deleted: "Category Deleted"
     not_delete: "Category not delete"
     edit: "edit"
-    delete: "deleted"
+    delete: "delete"
     ok_delete: "delete this category?"
     all: "All categories"
     new: "new category"
@@ -108,3 +108,8 @@ en:
     products_for_sale: "Products for Sale"
     add_to_cart: "Add to Cart"
     unit_price: "Unit Price"
+  comments:
+    new: "new comments"
+    comment: "Comment"
+    created: "comment created"
+    error: "comment error"
