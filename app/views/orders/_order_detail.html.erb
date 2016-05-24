@@ -1,0 +1,18 @@
+<% if @line_items.size == 0 %>
+  <p class="text-center">
+    <%= raw t("order.line_empty",
+      link: link_to(t("order.go_back"), root_path)) %>.
+  </p>
+<% else %>
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-8">
+      <div class="text-right">
+        <%= link_to t("order.go_back"), root_path %>
+      </div>
+    </div>
+  </div>
+  <% @line_items.each do |line_item| %>
+    <%= render "orders/order_row", product: line_item.product,
+      line_item: line_item, show_total: true %>
+  <% end %>
+<% end %>

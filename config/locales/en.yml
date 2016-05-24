@@ -108,6 +108,13 @@ en:
     products_for_sale: "Products for Sale"
     add_to_cart: "Add to Cart"
     unit_price: "Unit Price"
+    line_empty: "There are no items in your shopping cart. Please %{link} and add some items to your cart"
+    total_price: "Total Price"
+    update_quantity: "Update Quantity"
+    delete: "Delete"
+    line_delete: "Are you sure you wish to delete the product \"%{name}\" from your cart?"
+    go_back: "go back"
+
   comments:
     new: "new comments"
     comment: "Comment"

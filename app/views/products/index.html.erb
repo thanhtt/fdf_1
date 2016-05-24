@@ -1,5 +1,14 @@
-<h3 class="text-center">
-  <%= t "order.products_for_sale" %></h3>
+<h3 class="text-center"><%= t "order.products_for_sale" %></h3>
+<div class="row">
+  <div class="col-xs-4 col-xs-offset-8">
+    <div class="text-right">
+      <h4 class="order-text">
+        <%= render "layouts/order_text" %>
+      </h4>
+    </div>
+  </div>
+</div>
+
 <% @products.each do |product| %>
   <%= render "product_row", product: product, line_item: @line_item %>
 <% end %>
