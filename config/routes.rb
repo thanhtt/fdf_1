@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {omniauth_callbacks: "callbacks"}
   root "products#index"
 
-  resource :orders, only: [:show]
+  resource :order, only: [:show]
   resources :line_items, only: [:create, :update, :destroy]
   resources :products, only: [:show, :index] do
     resources :comments
