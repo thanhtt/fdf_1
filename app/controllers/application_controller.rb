@@ -6,4 +6,12 @@ class ApplicationController < ActionController::Base
     flash[:warning] = exception.message
     redirect_to root_path
   end
+
+  def current_order
+    if session[:order_id].present?
+      Order.find session[:order_id]
+    else
+      Order.new
+    end
+  end
 end

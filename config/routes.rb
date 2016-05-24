@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {omniauth_callbacks: "callbacks"}
-  root "static_pages#home"
+  root "products#index"
 
-  resources :products, only: [:show]
+  resources :products, only: [:show, :index]
+  resource :orders, only: [:show]
+  resources :line_items, only: [:create, :update, :destroy]
   resources :suggestions
 
   namespace :admin do
