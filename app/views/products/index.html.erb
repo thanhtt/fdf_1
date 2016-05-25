@@ -19,6 +19,13 @@
       <%= render "condition_fields", f: c %>
     <% end %>
     <%= link_to_add_fields t("searchs.add_conditions"), f, :condition %>
+    <div class="row field">
+      <%= f.sort_fields do |s| %>
+        <div class="col-md-3">
+          <%= s.sort_select %>
+        </div>
+      <% end %>
+    </div>
     <div class="actions col-md-3 col-md-offset-3">
       <%= f.submit t("searchs.search"), class: "btn-success" %>
     </div>

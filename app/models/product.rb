@@ -12,6 +12,8 @@ class Product < ActiveRecord::Base
   validates_numericality_of :price
   validates :image, presence: true
 
+  ratyrate_rateable "name"
+
   private
   def image_size_validation
     errors[:image] << I18n.t("max_size_image") if image.size >
