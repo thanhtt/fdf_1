@@ -21,6 +21,16 @@
     <div class="col-md-1">
       <%= social_share_button_tag(@product.name) %>
     </div>
+    <div class="col-md-3">
+      <%= rating_for @product, "name", star: 5, disable_after_rate: false,
+        enable_half: true %>
+    </div>
+    <div class="col md-1">
+      <span class="label label-info"> <%= t "rate.avg" %>:
+        <%= (@product.average("name").avg.round 3)if
+          @product.average("name") != nil %>
+      </span>
+    </div>
   </div>
 </div>
 

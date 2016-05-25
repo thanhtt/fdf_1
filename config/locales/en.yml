@@ -124,3 +124,5 @@ en:
     remove: "remove"
     add_conditions: "add conditions"
     search: "search"
+  rate:
+    avg: "Avg"

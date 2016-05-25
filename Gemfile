@@ -27,6 +27,7 @@ gem "bootstrap-social-rails"
 gem "font-awesome-rails"
 gem "ransack"
 gem "social-share-button"
+gem "ratyrate"
 
 group :development do
   gem "web-console", "~> 2.0"

@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
 
   enum role: [:admin, :member, :guest]
 
+  ratyrate_rater
+
   class << self
     def from_omniauth auth
       where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
