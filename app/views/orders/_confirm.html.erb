@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-xs-4 col-xs-offset-8">
+    <div class="text-right">
+      <%= link_to t("order.go_back"), root_path %>
+    </div>
+  </div>
+</div>
+<% @line_items.each do |line_item| %>
+  <div class="row">
+    <div class="col-xs-8">
+      <h4><%= line_item.product.name %></h4>
+      <div class="col-md-3">
+        <%= image_tag line_item.product.image.thumb.url, class: "img-rounded" %>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <%= form_for line_item, remote: true do |f| %>
+        <h4 class="text-right">
+          <%= t "order.unit_price" %>:
+          <span class="price">
+            <%= number_to_currency line_item.unit_price %>
+          </span>
+        </h4>
+        <h4 class="text-right">
+          <%= t "order.quantity" %>:
+          <%= number_to_currency line_item.quantity.to_i %>
+        </h4></br>
+        <h4 class="text-right">
+          <%= t "order.total_price" %>:
+          <span class="price">
+            <%= number_to_currency line_item.total_price %>
+          </span>
+        </h4>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+<div class="row">
+  <div class="col-xs-4 col-xs-offset-8">
+    <div class="text-right">
+      <%= form_for [@user, @order] do |f| %>
+        <%= f.hidden_field :status, value: "completed" %>
+        <%= f.submit t("order.confirm"), class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

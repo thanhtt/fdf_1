@@ -44,11 +44,11 @@ ActiveRecord::Schema.define(version: 20160519041305) do
   add_index "line_items", ["product_id"], name: "index_line_items_on_product_id"
 
   create_table "orders", force: :cascade do |t|
-    t.integer  "status"
+    t.integer  "status",     default: 0
     t.float    "total_pay"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   add_index "orders", ["user_id"], name: "index_orders_on_user_id"

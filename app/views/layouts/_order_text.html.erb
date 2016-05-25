@@ -1,3 +1,7 @@
-<%= link_to "#{current_order.line_items.size}
-  Items in Cart ( #{number_to_currency current_order.total_pay} )",
-  order_path, class: "btn btn-link" %>
+<% if current_order.new_record? %>
+  <p><%= t "order.no_item" %></p>
+<% else %>
+  <%= link_to "#{current_order.line_items.size}
+    Items in Cart ( #{number_to_currency current_order.total_pay} )",
+    order_path(current_order), class: "btn btn-link" %>
+<% end %>
