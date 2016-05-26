@@ -26,6 +26,7 @@ gem "ransack"
 gem "social-share-button"
 gem "ratyrate"
 gem "kaminari"
+gem "chatwork"
 
 group :development do
   gem "web-console", "~> 2.0"
