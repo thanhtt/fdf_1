@@ -1,0 +1,14 @@
+<% provide title: t("orders.all") %>
+<% if @orders.any? %>
+  <table class="table table-hover">
+    <tr>
+      <th><%= t "order.status" %></th>
+      <th><%= t "order.email" %></th>
+      <th><%= t "order.total_pay" %></th>
+    </tr>
+    <%= render @orders %>
+  </table>
+  <div class="text-center">
+    <%= will_paginate %>
+  </div>
+<% end %>
