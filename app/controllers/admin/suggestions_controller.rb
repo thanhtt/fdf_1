@@ -4,8 +4,7 @@ class Admin::SuggestionsController < ApplicationController
   layout "admin"
 
   def index
-    @suggestions = Suggestion.paginate page: params[:page],
-      per_page: Settings.per_page
+    @suggestions = Suggestion.page params[:page]
   end
 
   def show

@@ -19,6 +19,7 @@ class Order < ActiveRecord::Base
 
   def send_email
     @admin = User.find_by role: 0
-    UserNotifier.send_admin_email(@admin, self.user).deliver
+    UserNotifier.send_admin_email(@admin,
+      self.user).deliver_now if self.user.present?
   end
 end

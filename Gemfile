@@ -15,8 +15,6 @@ gem "jquery-rails"
 gem "turbolinks"
 gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
-gem "will_paginate", "3.0.7"
-gem "bootstrap-will_paginate", "0.0.10"
 gem "config"
 gem "friendly_id"
 gem "carrierwave"
@@ -27,6 +25,7 @@ gem "font-awesome-rails"
 gem "ransack"
 gem "social-share-button"
 gem "ratyrate"
+gem "kaminari"
 
 group :development do
   gem "web-console", "~> 2.0"
