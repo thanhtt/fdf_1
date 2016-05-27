@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def index
     @products = Product.paginate page: params[:page],
       per_page: Settings.per_page

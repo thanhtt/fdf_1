@@ -10,6 +10,7 @@ en:
     framgia_orders: "Framgia Orders"
     edit: "Edit"
     back: "Back"
+    login: "Log in"
   sessions:
     signup: "Sign up"
     signin: "Sign in"
@@ -145,3 +146,9 @@ en:
     search: "search"
   rate:
     avg: "Avg"
+  mailer:
+    notifier: "Edu-Order-System Notifier"
+    hi: "Hi"
+    sys_received_noti: "Your store have received some orders from"
+    go_to_check: "Please, go to Edu-Order-System, check detail some orders"
+    eos: "Edu-Order-System"

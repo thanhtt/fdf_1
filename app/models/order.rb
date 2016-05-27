@@ -2,6 +2,7 @@ class Order < ActiveRecord::Base
   belongs_to :user
   has_many :line_items
   before_save :update_total_pay
+  after_update :send_email
 
   enum status: [:progress, :completed]
 
@@ -14,5 +15,10 @@ class Order < ActiveRecord::Base
   private
   def update_total_pay
     self[:total_pay] = total_pay
+  end
+
+  def send_email
+    @admin = User.find_by role: 0
+    UserNotifier.send_admin_email(@admin, self.user).deliver
   end
 end

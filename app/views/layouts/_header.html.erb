@@ -3,7 +3,7 @@
     <%= link_to t("static_pages.app_name"), root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <% if logger? %>
+        <% if current_user.present? %>
           <li>
             <%= link_to t("static_pages.home"), root_path %></li>
           <li>
@@ -23,6 +23,10 @@
               </li>
             </ul>
           </li>
+        <% else %>
+        <li>
+          <%= link_to t("static_pages.login"), new_user_session_path %>
+        </li>
         <% end %>
       </ul>
     </nav>
