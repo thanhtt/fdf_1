@@ -2,8 +2,7 @@ class OrdersController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @orders = current_user.orders.paginate page:
-      params[:page], per_page: Settings.per_page
+    @orders = current_user.orders.page params[:page]
   end
 
   def show

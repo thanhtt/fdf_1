@@ -9,7 +9,7 @@
     <%= render @suggestions %>
   </table>
   <div class="text-center">
-    <%= will_paginate %>
+    <%= paginate @suggestions %>
   </div>
 <% else %>
   <h2> <%= t "suggestions.not_found" %> </h2>

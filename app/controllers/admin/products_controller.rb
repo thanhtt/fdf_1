@@ -4,8 +4,7 @@ class Admin::ProductsController < ApplicationController
   layout "admin"
 
   def index
-    @products = Product.paginate page: params[:page],
-      per_page: Settings.per_page
+    @products = Product.page params[:page]
   end
 
   def show
