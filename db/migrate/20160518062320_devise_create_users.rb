@@ -6,6 +6,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :encrypted_password, null: false, default: ""
 
       t.integer :role, default: 1
+      t.string :chatwork_id
 
       ## Recoverable
       t.string   :reset_password_token

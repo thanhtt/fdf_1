@@ -152,3 +152,5 @@ en:
     sys_received_noti: "Your store have received some orders from"
     go_to_check: "Please, go to Edu-Order-System, check detail some orders"
     eos: "Edu-Order-System"
+  chatworks:
+    you_requseted_order_in_app: "You request order in app"

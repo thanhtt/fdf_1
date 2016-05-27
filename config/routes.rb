@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   post "/rate", to: "rater#create", as: "rate"
-  devise_for :users, controllers: {omniauth_callbacks: "callbacks"}
+  devise_for :users, controllers: { registrations: "users/registrations" }
   root "products#index"
 
   resources :orders, only: [:show, :update, :index]

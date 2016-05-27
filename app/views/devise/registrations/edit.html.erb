@@ -29,6 +29,11 @@
         <%= f.password_field :current_password, autocomplete: "off" %>
       </div>
 
+      <div class="field">
+        <%= f.label :chatwork_id %><br />
+        <%= f.text_field :chatwork_id, autocomplete: "off",
+          class: "form-control" %>
+      </div>
       <div class="actions">
         <%= f.submit t("sessions.update"), class: "btn btn-primary" %>
       </div>
