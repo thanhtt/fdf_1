@@ -16,7 +16,7 @@
       <td><%= order.status %></td>
       <td><%= order.created_at.strftime "%m/%d/%Y %I:%M%p" %></td>
       <td class="col-actions text-right btn-group">
-        <%= link_to t("order.detail"), "#" %>
+        <%= link_to t("order.detail"), order %>
       </td>
     </tr>
   <% end %>

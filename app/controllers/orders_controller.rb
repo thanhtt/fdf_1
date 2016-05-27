@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
   end
 
   def show
-    @line_items = current_order.line_items
+    @line_items = @order.line_items
   end
 
   def update

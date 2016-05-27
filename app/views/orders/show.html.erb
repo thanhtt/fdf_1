@@ -1,3 +1,10 @@
 <div class="order-detail">
-  <%= render "order_detail" %>
+  <table class="table table-hover">
+    <tr>
+      <th><%= t "order.product_name" %></th>
+      <th><%= t "order.quantity" %></th>
+      <th><%= t "order.price" %></th>
+    </tr>
+    <%= render @line_items %>
+  </table>
 </div>
