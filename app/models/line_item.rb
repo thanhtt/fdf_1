@@ -6,6 +6,9 @@ class LineItem < ActiveRecord::Base
 
   before_save :finalize
 
+  delegate :name, to: :product
+  delegate :price, to: :product
+
   def unit_price
     if persisted?
       self[:unit_price]

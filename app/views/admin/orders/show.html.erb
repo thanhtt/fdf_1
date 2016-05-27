@@ -1,0 +1,20 @@
+<h2>
+  <%= t "order.email" %> <%= @order.email if @order.email != nil %>
+</h2>
+<h2>
+  <%= t "order.total_pay" %>:
+  <%= number_to_currency @order.total_pay %>
+</h2>
+<table class="table table-hover">
+  <tr>
+    <th><%= t "order.product_name" %></th>
+    <th><%= t "order.quantity" %></th>
+    <th><%= t "order.price" %></th>
+  </tr>
+  <%= render @line_items %>
+</table>
+<div class="row">
+  <div class="col-md-4">
+    <%= link_to t("order.all"), admin_orders_path %>
+  </div>
+</div>

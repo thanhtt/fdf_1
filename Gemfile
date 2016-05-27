@@ -34,4 +34,5 @@ group :development do
   gem "spring"
   gem "byebug"
   gem "sqlite3"
+  gem "pry"
 end

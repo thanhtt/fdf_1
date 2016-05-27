@@ -9,6 +9,8 @@ class Order < ActiveRecord::Base
     line_items.collect {|li| li.valid? ? (li.quantity * li.unit_price) : 0}.sum
   end
 
+  delegate :email, to: :user, allow_nil: true
+
   private
   def update_total_pay
     self[:total_pay] = total_pay
