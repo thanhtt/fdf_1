@@ -135,6 +135,7 @@ en:
     product_name: "Product name"
     quantity: "Quantity"
     price: "Price"
+    order: "My order"
   comments:
     new: "new comments"
     comment: "Comment"
