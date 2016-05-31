@@ -27,6 +27,7 @@ gem "social-share-button"
 gem "ratyrate"
 gem "kaminari"
 gem "chatwork"
+gem "faker"
 
 group :development do
   gem "web-console", "~> 2.0"
@@ -34,4 +35,13 @@ group :development do
   gem "byebug"
   gem "sqlite3"
   gem "pry"
+end
+
+group :test do
+  gem "factory_girl_rails"
+  gem "rspec"
+  gem "rspec-collection_matchers"
+  gem "simplecov", require: false
+  gem "shoulda-matchers", "~> 3.1"
+  gem "rspec-rails"
 end
