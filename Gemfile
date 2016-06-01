@@ -44,4 +44,5 @@ group :test do
   gem "simplecov", require: false
   gem "shoulda-matchers", "~> 3.1"
   gem "rspec-rails"
+  gem "shoulda-callback-matchers"
 end
