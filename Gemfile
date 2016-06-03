@@ -40,9 +40,11 @@ end
 group :test do
   gem "factory_girl_rails"
   gem "rspec"
+  gem "rspec-activemodel-mocks"
   gem "rspec-collection_matchers"
   gem "simplecov", require: false
   gem "shoulda-matchers", "~> 3.1"
   gem "rspec-rails"
   gem "shoulda-callback-matchers"
+  gem "capybara"
 end
