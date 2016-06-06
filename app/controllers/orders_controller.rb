@@ -12,6 +12,7 @@ class OrdersController < ApplicationController
   def update
     @order.user = current_user
     if @order.update_attributes order_params
+      UserNotificationService.new(current_user).notify
       session.delete :order_id
       flash[:success] = I18n.t "order.thanks_order"
     else
